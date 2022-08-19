@@ -1,0 +1,48 @@
+*According to the gregorian calendar, it was monday on the date 01/01/01. if any year is input through the keyboard write a program to find out what is the day on 1st january of this year.*
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int inputyear,referenceyear=2001;
+    printf("Enter the Year:\n");
+    scanf("%d",&inputyear);
+    int totalnoofyear=abs(inputyear-referenceyear);
+    printf("Total no of year:%d\n",totalnoofyear);
+    int totalnoofleapyear=totalnoofyear/4;
+    printf("Total no of leap year:%d\n", totalnoofleapyear);
+    int totalnoofdays=(totalnoofyear*365)+totalnoofleapyear;
+    printf("Total no of days:%d\n",totalnoofdays);
+    int remainingdays=totalnoofdays%7;
+    printf("Remaining Days:%d\n",remainingdays);
+    switch(remainingdays)
+    {
+                 case 0:
+                    printf("Monday");
+                   break;
+                 case 1:
+                    printf("Tuesday");
+                    break;
+                 case 2:
+                    printf("Wednesday");
+                    break;
+                 case 3:
+                    printf("Thursday");
+                     break;
+                 case 4:
+                    printf("Friday"); 
+                     break;                       
+                 case 5:
+                    printf("Saturday");
+                     break;                        
+                 case 6:
+                    printf("Sunday");
+                     break; 
+                 default: 
+                    printf("Invalid remainder");
+    }                
+    return 0;                                               
+}
