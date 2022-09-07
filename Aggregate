@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int m,p,c,e,cs,arr,per;
+    printf("Enter mathematics mar\n");
+    scanf("%d",&m);
+    printf("Enter physics mar\n");
+    scanf("%d",&p);
+    printf("Enter chemistry mar\n");
+    scanf("%d",&c);
+    printf("Enter english mar\n");
+    scanf("%d",&e);
+    printf("Enter computer science mar\n");
+    scanf("%d",&cs);    
+    arr=m+p+c+cs+e;
+    per=arr/5;
+    printf("The Aggregate Mars is %d\n",arr);
+    printf("The Percentage is %d\n",per);
+    return 0;
+}
