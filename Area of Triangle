@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float s,a,b,c;
+    int ar;
+    printf("Enter the length of a\n");
+    scanf("%f",&a);
+    printf("Enter the length of b\n");
+    scanf("%f",&b);
+    printf("Enter the length of c\n");
+    scanf("%f",&c);
+    s=(a+b+c)/2;
+    ar=sqrt(s*(s-a)*(s-b)*(s-c));
+    printf("Area of Triangle %d\n",ar);
+    return 0;
+}
+
+
+
+
+
