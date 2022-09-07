@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int dbtc,mt,ft,ichs,cent;
+    printf("Enter the Distance between two cities\n");
+    scanf("%d",&dbtc);
+    mt=1000*dbtc;
+    cent=100*mt;
+    ichs=cent/2.54;
+    ft=ichs/12;
+    printf("Distance in meters %d\n",mt);
+    printf("Distance in centimeter %d\n",cent);
+    printf("Distance in inches %d\n",ichs);
+    printf("Distance in feet %d\n",ft);
+    return 0;
+}
